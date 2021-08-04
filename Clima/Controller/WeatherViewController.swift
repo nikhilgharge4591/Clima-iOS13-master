@@ -26,10 +26,12 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
     }
     
     
+    // Search Button Pressed
     @IBAction func searchButtonPressed(_ sender: Any) {
         print(searchTextField.text)
     }
     
+    // TextField Delegate Methods
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchTextField.endEditing(true)
         print(textField.text)
